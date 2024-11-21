@@ -271,22 +271,3 @@ a[href^="mailto:"]:hover {
     transform: scale(1.1);
     filter: brightness(1.1);
 }
-
-/* Centered image style */
-.centered-image {
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-}
-
-.centered-image img {
-    transform: scale(1.1);
-    width: 100%;  /* Same size as a single grid item */
-    max-width: 195px; /* Restricts the image width to match the grid items */
-    border-radius: 00px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-.centered-image:hover {
-    transform: scale(1.115);
-    filter: brightness(1.1);
-}
