@@ -1,1 +1,167 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subrata Pal - Academic Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <a href="https://statpal.github.io/"><img src="src/profile2.jpg" alt="Subrata Pal", class="profile-image"></a>
+            <div class="info">
+                <h1>Subrata Pal</h1>
+                <!-- <p>PhD Student | Researcher | Creative Enthusiast</p> -->
+            </div>
+        </div>
+        <nav>
+            <ul class="tabs">
+                <li><a href="#home" onclick="showTab(event, 'home')">About me</a></li>
+                <li><a href="#research" onclick="showTab(event, 'research')">Research</a></li>
+                <li><a href="#publications" onclick="showTab(event, 'publications')">Publications</a></li>
+                <li><a href="#awards" onclick="showTab(event, 'awards')">Awards</a></li>
+                <li><a href="#teaching" onclick="showTab(event, 'teaching')">Teaching & Mentoring</a></li>
+                <li><a href="#cv" onclick="showTab(event, 'cv')">CV</a></li>
+                <li><a href="#extracurricular" onclick="showTab(event, 'extracurricular')">Extra Curricular</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="content-container" class="tab-container">
+        <section id="home" class="tab-content active">
+            <h1>Welcome!</h1>
+            <!-- <p>A glimpse into my academic and creative journey.</p>  -->
+            <p>
+                <div class="profile-container">
+                    <img src="src/profile.jpg" alt="Subrata Pal" class="wrapped-profile">
+                    <div class="social-links">
+                        <a href="https://github.com/StatPal" target="_blank" rel="noopener noreferrer">GitHub</a> |
+                        <a href="www.linkedin.com/in/subrata-pal-50617b117" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                </div>
+
+                <!-- <img src="src/profile.jpg" alt="Subrata Pal" class="wrapped-profile">  -->
+                Hi! I am Subrata Pal. I am a doctoral student in the 
+                <a href="https://www.stat.iastate.edu/" target="_blank" rel="noopener noreferrer">Department of Statistics</a> 
+                at <a href="https://www.iastate.edu/" target="_blank" rel="noopener noreferrer">Iowa State University</a>. 
+                Currently, I am working with 
+                <a href="https://faculty.sites.iastate.edu/somakd/" target="_blank" rel="noopener noreferrer">Prof. Somak Dutta</a> 
+                and 
+                <a href="https://www.stat.iastate.edu/people/ranjan-maitra" target="_blank" rel="noopener noreferrer">Prof. Ranjan Maitra</a>.
+            </p>
+            &nbsp;
+            <p>
+                Before joining ISU, I received my Master in Statistics from 
+                <a href="https://www.isical.ac.in/">Indian Statistical Institute, Kolkata</a> in 2018 and my Bachelor in 
+                Statistics (Hons) in 2016 from the same Institute. My research interests include Computational Statistics, Spatial Statistics, Tensor-variate data, Machine Learning, and Matrix-free methods. I got <a href="https://community.amstat.org/jointscsg-section/awards/student-paper-competition">Student paper award</a> from American Statistical Association (ASA) on Section Statistical Computing and Graphics on 2023 among other awards. This is my <a href="src/CV_Subrata_Pal.pdf" target="_blank">CV</a> (Last updated in Nov 2024).
+            </p>
+            &nbsp;
+            <p>Outside research, I have keen interests in photography, painting, music among other things.</p>
+            &nbsp;
+            <p>If you want to get in touch, please contact me by <a href="mailto:subrata@iastate.edu">subrata@iastate.edu</a>, <a href="mailto:subratalupal@gmail.com">subratalupal@gmail.com</a>
+            </p>
+        </section>
+        <section id="research" class="tab-content">
+            <h1>Research Interests</h1>
+                <p>My primary research focus is on <strong>Computational Statistics</strong>, particularly the modeling and analysis of <strong>tensor-variate data</strong> to tackle complex, high-dimensional problems such as <strong>functional MRI</strong>. I also work on spatial data modeling, creating efficient techniques to address spatially correlated data with the help of computational methods such as <strong>matrix-free methods</strong>.</p>
+                &nbsp;
+                <p>Beyond these areas, I also explore the integrating <strong>machine learning</strong> and deep learning to enhance the analysis of large datasets, and interested in <strong>text mining</strong> to extract patterns from unstructured data and apply these insights to real-world problems, including environmental science and collaboration with applications in different fields.</p>
+        </section>
+        <section id="awards" class="tab-content">
+            <h1>Awards and Honors</h1>
+            <ul>
+                <li><strong>2023 & 2024: Excellence in Graduate Student Research Service Award</strong>, Graduate College, Iowa State University. </li>
+                <li><strong>2023: Student Paper Award from the American Statistical Association (ASA)</strong> Sections on Statistical Computing and Graphics.</li>
+                <li><strong>2023: Best Narrative (Statistics), International Cherry Blossom Prediction Competition, George Mason University</strong>, jointly with Aniruddha Pathak, Kunal Das.</li>
+                <li><strong>2022: Vince Sposito Computing Excellence Award</strong> Department of Statistics, Iowa State University.</li>
+                <li><strong>2022: Outstanding Student Presentation Award, Honorable Mention</strong>, 21st Conference on Artificial Intelligence for Environmental Science, American Meteorological Society Annual Meeting.</li>
+                <li><strong>2013-2018: Inspire Scholarship</strong>, funded by the Department of Science & Technology, Govt. of India.</li>
+            </ul>
+        </section>
+        <!-- <p>Teaching experiences and philosophies.</p></section> -->
+        <section id="teaching" class="tab-content">
+            <h1>Teaching</h1>
+            <ul>
+                <li><strong>Grader</strong>: Introduction to Statistical Computing (STAT 579), 2022F.</li>
+                <li><strong>Lab TA</strong>: Principles of Statistics (STAT 101), 2018F, 2019S.</li>
+                <li><strong>Lab TA</strong>: Introduction to Business Statistics II (STAT 326), 2019S.</li>
+                <li><strong>Lab TA & Grader</strong>: Statistical Methods for Research Workers (STAT 587), 2018F.</li>
+            </ul>
+            <h1>Workshops</h1>
+            <ul>
+                <li><strong>2023:</strong> Conducted "A Python workshop to bridge the gap between statistics and practical machine learning," with the help of Aniruddha Pathak, Gautham Venkatasubramanian, Benjamin Jacobs, and Federico Veneri Guarch. 
+                    <a href="https://github.com/StatPal/python_DL_workshop" target="_blank">GitHub Link</a>
+                </li>
+                <li><strong>2019:</strong> Conducted workshop on "Text analysis," jointly with Fan Dai, under the supervision of Prof. Somak Dutta and Prof. Ranjan Maitra. 
+                    <a href="https://github.com/fanstats/text-analytics" target="_blank">GitHub Link</a>
+                </li>
+            </ul>
+            <h1>Mentoring</h1>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <!-- <section id="cv" class="tab-content"><h1>CV</h1><p>Download my CV: <a href="src/CV_Subrata_Pal.pdf" target="_blank">Download</a></p></section> -->
+        <section id="cv" class="tab-content">
+            <p>Below is my CV:</p>
+            <embed src="src/CV_Subrata_Pal.pdf" type="application/pdf" width="100%" height="600px" />
+            <!-- <h1>Skills</h1>
+            <ul>
+                <li><strong>Programming Languages</strong>: R, C/C++, Python, PyTorch, Shell scripting, Julia.</li>
+                <li><strong>Computational Software</strong>: Matlab, Microsoft Excel, SAS.</li>
+                <li><strong>Editing Tools</strong>: LaTeX, Microsoft Word.</li>
+            </ul> -->
+        </section>
+        <section id="publications" class="tab-content">
+            <h1>Publications</h1>
+            <ul>
+                <li>Tirone, E., <strong>Pal, S.</strong>, Gallus, W. A., Dutta, S., Maitra, R., Newman, J. L., Weber, E., and Israel Jirak, I., (2024). A
+                    Machine Learning Approach to Improve the Usability of Severe Thunderstorm Wind Reports, <em>Bulletin of the
+                    American Meteorological Society</em>, 105(3): E623-E638. <a href="https://doi.org/10.1175/BAMS-D-22-0268.1">DOI</a></li>
+                <li><strong>Pal, S.</strong>, Dutta, S., Maitra, R. (2023). Fast matrix-free methods for model-based personalized synthetic MR imaging, <em>Journal of Computational and Graphical Statistics</em>, 33(3): 1109-1117. <a href="https://doi.org/10.1080/10618600.2023.2284208">DOI</a></li>
+                <li><strong>Pal, S.</strong>, Dutta, S., Maitra, R. (2023). Personalized Synthetic MR Imaging with Deep Learning Enhancements, <em>Magnetic Resonance in Medicine</em>, 89(4): 1634-1643. <a href="https://doi.org/10.1002/mrm.29527">DOI</a></li>
+                <li>Ray, S., <strong>Pal, S.,</strong> Kar, S., Basu, A. (2022). Characterizing the Functional Density Power Divergence Class, <em>IEEE Transactions on Information Theory</em>, 69(2): 1141-1146. <a href="https://doi.org/10.1109/TIT.2022.3210436">DOI</a></li>
+            </ul>
+            <h1>Preprints</h1>
+            <ul>
+                <li>Ray, S., <strong>Pal, S.,</strong> Kar, S., Basu, A. (2022). Characterizing Logarithmic Bregman Functions. <a href="https://arxiv.org/abs/2105.05963">(arxiv preprint)</a> </li>
+            </ul>
+            <h1>Upcoming Publications</h1>
+            <ul>
+                <li><strong>Pal, S., </strong> Maitra R., ToTTR: Tensor-on-Tensor Time Series Regression for Integrated One-step fMRI analysis.</li>
+                <li><strong>Pal, S., </strong> Dutta S., Matrix Free computations for Spatial Functional Data.</li>
+                <li><strong>Pal, S., </strong> Dutta S., Matrix Free Analysis of Multivariate Spatial Data.</li>
+            </ul>
+            <h1>Softwares</h1>
+            <ul>
+                <li><strong>ToTR: an R package</strong> for Tensor-on-Tensor Regression with Kronecker Separable Covariance. <a href="https://github.com/carlos-llosa/totr" target="_blank">GitHub Link</a>, Contributing author</li>
+                <li><strong>symr: a C++, R, and Python package</strong> for model-based Synthetic Magnetic Resonance Imaging Program. <a href="https://github.com/StatPal/symr" target="_blank">GitHub Link</a>, creator, maintainer, and contributing author</li>
+                <li><strong>DeepSynMRI: a Python package</strong> for Synthetic Magnetic Resonance Imaging Program using Deep Learning Enhancements. <a href="https://github.com/StatPal/DeepSynMRI" target="_blank">GitHub Link</a>, creator, maintainer, and contributing author</li>
+            </ul>        
+        </section>
+        <section id="extracurricular" class="tab-content">
+            <h1>Extra Curricular</h1><p>Photography, painting, and more!</p>
+            <p>Beyond my academic pursuits, I have a deep passion for **photography**, **painting**, and **creative arts**. I find that engaging in these activities allows me to explore the world in a different light, enhancing my creativity!</p>
+
+            <div class="image-grid">
+                <div class="image-item"><img src="src/photo1.JPG" alt="Photo 1" class="extra-photo"></div>
+                <div class="image-item"><img src="src/photo2.JPG" alt="Photo 2" class="extra-photo"></div>
+                <div class="image-item"><img src="src/photo3.JPG" alt="Photo 3" class="extra-photo"></div>
+                <div class="image-item"><img src="src/photo4.JPG" alt="Photo 4" class="extra-photo"></div>
+                <div class="image-item"><img src="src/photo5.JPG" alt="Photo 5" class="extra-photo"></div>
+                <div class="image-item"><img src="src/photo6.JPG" alt="Photo 6" class="extra-photo"></div>
+                <div class="image-item"><img src="src/photo7.JPG" alt="Photo 7" class="extra-photo"></div>
+                <div class="image-item"><img src="src/photo8.JPG" alt="Photo 8" class="extra-photo"></div>
+                <div class="image-item"><img src="src/photo9.JPG" alt="Photo 9" class="extra-photo"></div>
+                <!-- <div class="image-item"><img src="src/photo10.JPG" alt="Photo 10" class="extra-photo"> -->
+                </div>
+            <!-- Centered 10th Image -->
+            <div class="centered-image">
+                <img src="src/photo10.JPG" alt="Photo 10" class="extra-photo">
+            </div>
+            </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
