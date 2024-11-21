@@ -4,10 +4,23 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     background-color: #1f1f1f;
     color: #e6e6e6;
     line-height: 1.6;
+}
+h1, h2, h3 {
+    font-family: 'Cormorant', serif; /* Elegant serif for headings */
+    font-weight: 600;
+}
+h1.name {
+    font-family: 'Tangerine', cursive; /* Decorative font for the name */
+    font-size: 3em; /* Make it stand out */
+    font-weight: 400; /* Lighter weight for a natural look */
+    color: #ffe481; /* Optional: Golden yellow for emphasis */
+    text-align: left; /* Center the name */
+    margin-top: 15px;
+    margin-left: 5px;
 }
 header {
     background-color: #2b2b2b;
@@ -37,11 +50,11 @@ header {
     margin-right: auto;
     text-align: left;
 }
-.profile h1 {
+/* .profile h1 {
     font-size: 1.8em;
     color: #ffffff;
     margin-bottom: 5px;
-}
+} */
 .profile p {
     font-size: 1em;
     color: #a0a0a0;
@@ -59,7 +72,7 @@ nav ul li a {
     color: #a0a0a0;
     text-decoration: none;
     padding: 8px 15px;
-    border-radius: 5px;
+    border-radius: 25px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 nav ul li a:hover, nav ul li a.active {
@@ -76,17 +89,26 @@ main {
 .tabs {
     display: flex;
     flex-wrap: nowrap; /* Allow tab headings to wrap */
-    justify-content: center; /* Center the tabs horizontally */
+    justify-content: right; /* Center the tabs horizontally */
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+/* Allow wrapping on small screens */
+@media (max-width: 1250px) {
+    .tabs {
+        flex-wrap: wrap; /* Enable wrapping on smaller screens */
+        justify-content: right; /* Center-align tabs when wrapped */
+    }
+}
+
 .tabs li {
-    margin: 2px 3px; /* Add spacing between the tabs */
+    margin: 1px 1px; /* Add spacing between the tabs */
 }
 
 .tabs a {
+    font-family: 'Nunito', sans-serif;
     color: #a0a0a0;
     text-decoration: none;
     padding: 8px 15px;
@@ -96,13 +118,13 @@ main {
     white-space: nowrap; /* Allow text to wrap if necessary */
     word-wrap: break-word; /* Break long words */
     text-overflow: ellipsis;
+    font-size:larger;
 }
 
 .tabs a:hover, .tabs a.active {
     background-color: #444;
-    color: #ffffff;
+    color: #fff1cb;
 }
-
 
 
 .tab-container {
@@ -161,7 +183,7 @@ main {
 .tab-content ul {
     margin-top: 10px;    /* Space between the heading and the list */
     margin-bottom: 10px; /* Space at the bottom of the list */
-    padding-left: 20px;  /* Indentation for bullet points */
+    padding-left: 50px;  /* Indentation for bullet points */
 }
 .tab-content li {
     margin-bottom: 10px; /* Add space between individual bullet points */
